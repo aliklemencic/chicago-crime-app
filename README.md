@@ -6,7 +6,7 @@ A big data application to see Chicago crime by type, year, and weather.
 
 This application is a toy implementation of the Lambda architecture using the Apache stack. Using weather data from the National Weather Service and 20 years of crime data from the Chicago Data Portal's [crime dashboard](https://data.cityofchicago.org/Public-Safety/Crimes-2001-to-present-Dashboard/5cd6-ry5g), it implements batch, serving, and speed layers as well as a front-end web application to display crimes in Chicago by crime type, year, and weather. A video walkthrough of the application can be found [here](https://youtu.be/Z3n7DJ34Fu8).
 
-This project was completed in December 2021 as a final project for the MPCS 53014 Big Data Application Architecture class at the University of Chicago.
+This project was completed in December 2022 as a final project for the MPCS 53014 Big Data Application Architecture class at the University of Chicago.
 
 Languages and platforms used: Hadoop DFS, HBase, HiveQL, Java, Kafka, Node.js, Scala, Spark
 
