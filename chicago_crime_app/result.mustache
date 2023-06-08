@@ -1,0 +1,20 @@
+<!DOCTYPE html PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html>
+  <head>
+    <title>Chicago Crimes</title>
+    <link type="text/css" rel="stylesheet" href="table.css" />
+  </head>
+  <body>
+    <div style="margin-left:275px;margin-right:auto;display:inline-block;color:#1b3432;font-size:20px;">
+      <h2>Annual Chicago {{crime_type}} crimes by weather</h2>
+    </div>
+    <p style="bottom-margin:10px;text-align:center;">
+      <table class="CSS_Table_Example" style="width:60%;margin:auto;">
+        <tr><td>Year</td><td>Clear</td><td>Fog</td><td>Rain</td><td>Snow</td><td>Hail</td><td>Thunder</td><td>Tornado</td></tr>
+        {{#yearly_totals}}
+        <tr><td>{{year}}</td><td>{{clear_crimes}}</td><td>{{fog_crimes}}</td><td>{{rain_crimes}}</td><td>{{snow_crimes}}</td>
+	  <td>{{hail_crimes}}</td><td>{{thunder_crimes}}</td><td>{{tornado_crimes}}</td></tr>{{/yearly_totals}}
+	
+    </table>
+    </p>
+</body></html>

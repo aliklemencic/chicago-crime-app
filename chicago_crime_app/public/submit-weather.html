@@ -1,0 +1,28 @@
+<!DOCTYPE html PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html lang="en">
+<head>
+    <title>Submit Weather</title>
+</head>
+<body style='background-image:url("chicago-lake-michigan.jpeg");background-position:center top;background-size: 100%;'>
+<p style="margin-bottom:5px"/>
+<h2 style="margin-top:1.5em;text-align:center;color:#414141">&nbsp;Submit Weather Report&nbsp;</h2>
+<form action="/weather.html" style="width:60%;margin:auto;text-align:center;"  method="get">
+    <label>
+        <input type="text" size="5" name="month" value="month"/> / <input type="text" size="5" name="day" value="day"/> / <input type="text" size="5" name="year" value="year"/>
+    </label>
+    <label style="font-weight:bold;color:#383737">
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;fog <input type="checkbox" name="fog" value="1"/>
+        rain <input type="checkbox" name="rain" value="1"/>
+        snow <input type="checkbox" name="snow" value="1"/>
+        hail <input type="checkbox" name="hail" value="1"/>
+        thunder <input type="checkbox" name="thunder" value="1"/>
+        tornado <input type="checkbox" name="tornado" value="1"/>
+    </label>
+    <label>
+        <span>&nbsp;</span><input type="submit" value="Submit">
+    </label>
+</form>
+<iframe frameBorder="0" name="results_iframe" style="width:100%"/>
+</body>
+</html>

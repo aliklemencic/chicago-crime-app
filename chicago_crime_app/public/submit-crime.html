@@ -1,0 +1,54 @@
+<!DOCTYPE html PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html lang="en">
+<head>
+    <title>Submit Crimes</title>
+</head>
+<body style='background-image:URL("chicago-lake-michigan.jpeg");background-position:center top;background-size: 100%;'>
+<p style="margin-bottom:5px"/>
+<h2 style="margin-top: 1.5em; text-align:center;color:#414141">&nbsp;Submit Crime Report&nbsp;</h2>
+<form action="/crime.html" style="width:60%;margin:auto;text-align:center;" method="get">
+    <label>
+        <input type="text" size="5" name="month" value="month"/> / <input type="text" size="5" name="day" value="day"/> / <input type="text" size="5" name="year" value="year"/>
+    </label>
+    &nbsp;&nbsp;&nbsp;&nbsp;
+    <label for="crimes" style="color:#292929">What type of crime did you witness?</label>&nbsp;
+    <select id="crimes" name="crime_type">
+        <option value="arson">Arson</option>
+        <option value="assault">Assault</option>
+        <option value="battery">Battery</option>
+        <option value="burglary">Burglary</option>
+        <option value="concealed_carry_license_violation">Concealed carry violation</option>
+        <option value="criminal_damage">Criminal damage</option>
+        <option value="criminal_sexual_assault">Sexual assault</option>
+        <option value="criminal_trespass">Trespassing</option>
+        <option value="deceptive_practice">Deceptive practice</option>
+        <option value="gambling">Gambling</option>
+        <option value="homicide">Homicide</option>
+        <option value="human_trafficking">Human trafficking</option>
+        <option value="interference_with_public_officer">Interference with a public officer</option>
+        <option value="intimidation">Intimidation</option>
+        <option value="kidnapping">Kidnapping</option>
+        <option value="liquor_law_violation">Liquor law violation</option>
+        <option value="motor_vehicle_theft">Motor vehicle theft</option>
+        <option value="narcotics">Narcotics</option>
+        <option value="non-criminal">Non-criminal</option>
+        <option value="obscenity">Obscenity</option>
+        <option value="offense_involving_children">Offense involving children</option>
+        <option value="other_offense">Other offense</option>
+        <option value="prostitution">Prostitution</option>
+        <option value="public_indecency">Public indecency</option>
+        <option value="public_peace_violation">Public peace violation</option>
+        <option value="ritualism">Ritualism</option>
+        <option value="robbery">Robbery</option>
+        <option value="sex_offense">Sex offense</option>
+        <option value="stalking">Stalking</option>
+        <option value="theft">Theft</option>
+        <option value="weapons_violation">Weapons violation</option>
+    </select>
+    <label>
+        <span>&nbsp;</span><input type="submit" value="Submit">
+    </label>
+</form>
+<iframe frameBorder="0" name="results_iframe" style="width:100%"/>
+</body>
+</html>

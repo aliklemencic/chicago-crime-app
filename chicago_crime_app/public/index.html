@@ -1,0 +1,51 @@
+<!DOCTYPE html PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html>
+<head>
+  <title>Chicago Crimes</title>
+  <style>
+    li {
+      margin-left: 25px;
+    }
+  </style>
+</head>
+<body style='background-image:URL("chicago-lake-michigan.jpeg");background-repeat:no-repeat;background-position:center top;-webkit-background-size:100%;-moz-background-size:100%;-o-background-size:100%;background-size: 100%;font-size:20px;'>
+<h2 style="margin-top: 1.5em; text-align:center;color:#414141">&nbsp;Select Crime Type&nbsp;</h2>
+<form action="/crimes.html" style="width:300px;margin:0 auto;text-align:center;" method="get" target="results_iframe">
+  <select id="crimes" name="crime_type">
+    <option value="arson">Arson</option>
+    <option value="assault">Assault</option>
+    <option value="battery">Battery</option>
+    <option value="burglary">Burglary</option>
+    <option value="concealed_carry_license_violation">Concealed carry violation</option>
+    <option value="criminal_damage">Criminal damage</option>
+    <option value="criminal_sexual_assault">Sexual assault</option>
+    <option value="criminal_trespass">Trespassing</option>
+    <option value="deceptive_practice">Deceptive practice</option>
+    <option value="gambling">Gambling</option>
+    <option value="homicide">Homicide</option>
+    <option value="human_trafficking">Human trafficking</option>
+    <option value="interference_with_public_officer">Interference with a public officer</option>
+    <option value="intimidation">Intimidation</option>
+    <option value="kidnapping">Kidnapping</option>
+    <option value="liquor_law_violation">Liquor law violation</option>
+    <option value="motor_vehicle_theft">Motor vehicle theft</option>
+    <option value="narcotics">Narcotics</option>
+    <option value="non-criminal">Non-criminal</option>
+    <option value="obscenity">Obscenity</option>
+    <option value="offense_involving_children">Offense involving children</option>
+    <option value="other_offense">Other offense</option>
+    <option value="prostitution">Prostitution</option>
+    <option value="public_indecency">Public indecency</option>
+    <option value="public_peace_violation">Public peace violation</option>
+    <option value="ritualism">Ritualism</option>
+    <option value="robbery">Robbery</option>
+    <option value="sex_offense">Sex offense</option>
+    <option value="stalking">Stalking</option>
+    <option value="theft">Theft</option>
+    <option value="weapons_violation">Weapons violation</option>
+</select> 	<span></span> <input  type="submit" value="Submit">
+</form>
+<p style="margin-top:50px;"></p>
+<iframe frameBorder="0" name="results_iframe" onload='javascript:(function(o){o.style.height=o.contentWindow.document.body.scrollHeight+10+"px";}(this));' style="display:block;width:70%;margin-left:auto;margin-right:auto"/>
+</body>
+</html>
